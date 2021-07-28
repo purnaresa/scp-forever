@@ -2,7 +2,7 @@
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "S3HTTPSOnly",
+      "Sid": "S3_Deny_Non_HTTPS",
       "Effect": "Deny",
       "Action": [
         "s3:PutObject",
