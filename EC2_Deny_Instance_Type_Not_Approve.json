@@ -2,7 +2,7 @@
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "EC2_Deny_Instance_Type_Not_Approve",
+      "Sid": "EC2DenyInstanceTypeNotApprove",
       "Effect": "Deny",
       "Action": "ec2:RunInstances",
       "Resource": "arn:aws:ec2:*:*:instance/*",
