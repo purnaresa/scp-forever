@@ -2,7 +2,7 @@
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "Billing_Deny_All_Access",
+      "Sid": "BillingDenyAllAccess",
       "Effect": "Deny",
       "Action": [
         "aws-portal:*"
