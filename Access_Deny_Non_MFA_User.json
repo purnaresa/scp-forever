@@ -1,0 +1,50 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AccessDenyNonMFAUser",
+      "Effect": "Deny",
+      "Action": [
+        "a4b:*",
+        "artifact:*",
+        "aws-portal:*",
+        "budgets:*",
+        "ce:*",
+        "chime:*",
+        "cloudfront:*",
+        "cur:*",
+        "datapipeline:GetAccountLimits",
+        "directconnect:",
+        "globalaccelerator:*",
+        "health:*",
+        "importexport:*",
+        "mobileanalytics:*",
+        "organizations:*",
+        "resource-groups:*",
+        "route53:*",
+        "route53domains:*",
+        "s3:GetBucketLocation",
+        "s3:ListAllMyBuckets",
+        "shield:*",
+        "support:*",
+        "tag:*",
+        "trustedadvisor:*",
+        "waf:*",
+        "wellarchitected:*"
+      ],
+      "Resource": [
+        "*"
+      ],
+      "Condition": {
+        "BoolIfExists": {
+          "aws:MultiFactorAuthPresent": false
+        },
+        "StringNotLike": {
+          "aws:PrincipalArn": [
+            "*AWSReservedSSO*"
+          ]
+        }
+      }
+    }
+  ]
+}
