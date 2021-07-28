@@ -2,7 +2,7 @@
    "Version":"2012-10-17",
    "Statement":[
       {
-         "Sid":"NoPublicIPforEC2",
+         "Sid":"EC2_Deny_IP_Public",
          "Effect":"Deny",
          "Action":[
             "ec2:RunInstances"
