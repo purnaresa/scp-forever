@@ -1,0 +1,23 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "DenyServiceQuotaRequestWithException",
+			"Effect": "Deny",
+			"Action": [
+				"servicequotas:RequestServiceQuotaIncrease",
+				"servicequotas:PutServiceQuotaIncreaseRequestIntoTemplate"
+			],
+			"Resource": [
+				"*"
+			],
+			"Condition": {
+				"StringNotLike": {
+					"aws:PrincipalArn": [
+						"*role-name"
+					]
+				}
+			}
+		}
+	]
+}
