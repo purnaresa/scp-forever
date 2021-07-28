@@ -2,7 +2,7 @@
 	"Version": "2012-10-17",
 	"Statement": [
 		{
-			"Sid": "ServiceQuota_Deny_With_Role_Exception",
+			"Sid": "ServiceQuotaDenyWithRoleException",
 			"Effect": "Deny",
 			"Action": [
 				"servicequotas:RequestServiceQuotaIncrease",
