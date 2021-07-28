@@ -2,7 +2,7 @@
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "RDS_Deny_Not_Encrypted",
+      "Sid": "RDSDenyNotEncrypted",
       "Effect": "Deny",
       "Action": [
         "rds:CreateDBCluster",
